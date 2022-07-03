@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{AE9D48EE4CA6218B}Assets/Shader/NVG/NightVisionOldGenGrain.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

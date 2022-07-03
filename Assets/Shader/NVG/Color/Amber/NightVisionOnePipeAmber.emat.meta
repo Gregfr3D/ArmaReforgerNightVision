@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{8BE24C4A746C9963}Assets/Shader/NVG/Color/NightVisionOnePipeAmber.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

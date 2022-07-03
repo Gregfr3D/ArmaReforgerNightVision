@@ -1,0 +1,22 @@
+SCR_EditorModeEntity : "{E56F54E533ACE527}Prefabs/Editor/Modes/EditorModeBase.et" {
+ ID "54F0A77282A3AA3B"
+ components {
+  SCR_ToolbarActionsEditorComponent "{52B49285C6A78700}" {
+   m_ActionsLists {
+    SCR_EditorActionList "{54B2AA70E13C3BC0}" {
+     m_Actions {
+      GREG_SCR_NightVisionToolbarAction "{59B90970481D42EF}" {
+       m_Info SCR_UIInfo "{59B909706EA1C9AF}" {
+        Name "Toggle Night Vision "
+        Icon "{30580A8DD4C2CE34}UI/Textures/Editor/Toolbar/ToolbarAction_NightVision.edds"
+       }
+       m_ActionType TOGGLE
+       m_ActionGroup ACTION
+       m_iOrder 3
+      }
+     }
+    }
+   }
+  }
+ }
+}

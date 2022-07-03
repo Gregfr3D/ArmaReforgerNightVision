@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{69CF7CE0EE987FB1}Assets/Characters/HeadGear/Helmet_NVG/data/helmet_BCR.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{5117C77237EF2D2F}Assets/Characters/HeadGear/Helmet_NVG/data/helmet_NMO.edds"
+}

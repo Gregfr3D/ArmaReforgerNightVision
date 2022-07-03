@@ -1,0 +1,59 @@
+MetaFileClass {
+ Name "{D1829C876082CC3B}Assets/Characters/HeadGear/Helmet_NVG/helmet.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   ExportSceneHierarchy 1
+   MaterialAssigns {
+    MaterialAssignClass "{59BAB585BECFEA1A}" {
+     SourceMaterial "nvg"
+     AssignedMaterial "{2A2D7C793F22ACD1}Assets/Characters/HeadGear/Helmet_NVG/data/nvg.emat"
+    }
+    MaterialAssignClass "{59BAB585BECFEA5F}" {
+     SourceMaterial "glass"
+     AssignedMaterial "{C6F49822D9964213}Assets/Characters/HeadGear/Helmet_NVG/data/glass.emat"
+    }
+    MaterialAssignClass "{59BAB585BECFEA58}" {
+     SourceMaterial "night_vis_goggles"
+     AssignedMaterial "{EB2CC7E772AC3CE6}Assets/Characters/HeadGear/Helmet_NVG/data/night_vis_goggles.emat"
+    }
+    MaterialAssignClass "{59BAB585BECFEA47}" {
+     SourceMaterial "helmet"
+     AssignedMaterial "{79E7DE79BBA71DC0}Assets/Characters/HeadGear/Helmet_NVG/data/helmet.emat"
+    }
+    MaterialAssignClass "{59BAB585BECFEA42}" {
+     SourceMaterial "headset"
+     AssignedMaterial "{E7D514C3C93C2FD1}Assets/Characters/HeadGear/Helmet_NVG/data/headset.emat"
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_Object {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{EDB153DC99889624}Common/Materials/Game/Metal/metal_3mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{59BAB585BE139D6E}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{59BAB585BE139CD5}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{59BAB585BE139C11}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{59BAB585BE139C48}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{59BAB585BE139F89}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

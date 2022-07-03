@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{17F9DAC169F37AFF}Prefabs/Characters/HeadGear/Helmet_NVG/GREG_Headgear_NVG_White_3.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

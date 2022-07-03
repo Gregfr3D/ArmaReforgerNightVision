@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D80E858A06A5416C}Assets/Shader/NVG/NightVisionColorGrading.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}
