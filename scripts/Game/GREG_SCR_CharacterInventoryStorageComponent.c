@@ -26,5 +26,14 @@ modded class SCR_CharacterInventoryStorageComponent : CharacterInventoryStorageC
     {
         super.OnAddedToSlot(item, slotID);
         _onRemoved.Invoke(item);
+		
+		// DIRTY WORKAROUND
+		// Frame Events are not called on items that are created by the inventory system. I'm guessing this is a bug?
+		// That's why we are just always resetting the NVG effects here if a 
+		auto nv = item.FindComponent(GREG_NightVisionComponent);
+	    if(nv)
+	    {
+			GREG_NightVisionComponent.Cast(nv).ResetEffects();
+		}
     }
 }

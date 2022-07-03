@@ -34,43 +34,14 @@ class GREG_NightVisionComponent: ScriptComponent
 	private bool _isOn;
 	protected SoundComponent _soundComponent;
 	private SCR_CharacterInventoryStorageComponent _inventory;
-	private float LuminosityValue = 3;
-	int camId;
+	private int camId;
+	
 	/* 
 		Default value of the luminosity. 
 		0 --> 3 Less luminosity, 
 		3 --> 6 More luminosity
 	*/
-	private void HandleInventoryEvents()
-	{
-	    if(_inventory == null)
-	    {
-			IEntity localPlayer = GetLocalPlayer();
-			if(!localPlayer) return;
-			
-	        _inventory = SCR_CharacterInventoryStorageComponent.Cast(GetLocalPlayer().FindComponent(SCR_CharacterInventoryStorageComponent));
-	        _inventory.GetOnRemoved().Insert(OnItemRemoved);
-	    }
-	}
-	// Replaced by GetPlayerOwningNVG() on line 46
-	
-	private IEntity GetLocalPlayer()
-	{
-	    auto playerController = GetGame().GetPlayerController();
-	    if(playerController)
-	        return playerController.GetControlledEntity();
-	    return null;
-	}
- 
-	private void OnItemRemoved(IEntity item)
-	{
-		auto nv = item.FindComponent(GREG_NightVisionComponent);
-	    if(nv)
-	    {
-			Print("Resetting Effect");
-			ResetEffects();
-	    }
-	}
+	private float LuminosityValue = 3;
  
 	override void EOnInit(IEntity owner)
 	{
@@ -80,21 +51,15 @@ class GREG_NightVisionComponent: ScriptComponent
 		GetGame().GetInputManager().AddActionListener("NightVisionDecreaseLuminosity", EActionTrigger.DOWN, DecreaseLuminosity);
 		BaseWorld world = owner.GetWorld();
 		camId = world.GetCurrentCameraId();
-		SetEventMask(owner, EntityEvent.POSTFRAME);
+        owner.SetFlags(EntityFlags.ACTIVE, true);
+		SetEventMask(owner, EntityEvent.FRAME);
 	}
  
 	// We need the OnPostInit and EOnInit for the EOnFrame to be called.
 	override void OnPostInit(IEntity owner)
 	{
 		super.OnPostInit(owner);
-		SetEventMask(owner, EntityEvent.INIT | EntityEvent.POSTFRAME);
-        owner.SetFlags(EntityFlags.ACTIVE, true);
-	}
- 
-	override void EOnPostFrame(IEntity owner, float timeSlice)
-	{     
-		HandleInventoryEvents();
- 
+		SetEventMask(owner, EntityEvent.INIT | EntityEvent.FRAME);
 	}
  
 	protected IEntity GetPlayerOwningNVG()
@@ -104,11 +69,12 @@ class GREG_NightVisionComponent: ScriptComponent
  
 	private void KeybindPressed()
 	{
-		IEntity localPlayer = GetGame().GetPlayerController().GetControlledEntity();		
-		_isOn = !_isOn;
+		IEntity localPlayer = GetGame().GetPlayerController().GetControlledEntity();
  
 		if(localPlayer == GetPlayerOwningNVG())
-		{
+		{		
+			_isOn = !_isOn;
+			
 			if(_isOn) 
 			{
 				SetEffects(m_colorshaderpath, m_grainshaderpath);
@@ -127,9 +93,8 @@ class GREG_NightVisionComponent: ScriptComponent
 		GetGame().GetWorld().SetCameraPostProcessEffect(camId, 18, PostProcessEffectType.FilmGrain, mat17);
 	}
  
-	private void ResetEffects()
+	void ResetEffects()
 	{
- 
 		GetGame().GetWorld().SetCameraPostProcessEffect(camId, 16, PostProcessEffectType.HDR, "{9DEECCABE8357209}Common/Postprocess/HDR.emat"); // !!! MUST NOT BE MODIFIED !!!
 		GetGame().GetWorld().SetCameraPostProcessEffect(camId, 18, PostProcessEffectType.None, "");
 		GetGame().GetWorld().SetCameraPostProcessEffect(camId, 12, PostProcessEffectType.None, "");
@@ -137,6 +102,8 @@ class GREG_NightVisionComponent: ScriptComponent
 		LuminosityValue = 3;
  
 		GetGame().GetWorld().SetCameraHDRBrightness(camId, -1); // To be sure we are resetting the value of the HDR Brightness.
+		
+		_isOn = false;
 	}
  
 	private void IncreaseLuminosity()
@@ -150,10 +117,6 @@ class GREG_NightVisionComponent: ScriptComponent
 				float DefaultHDRBrightness = GetGame().GetWorld().GetCameraHDRBrightness(camId);
 				float HDRBrightness = DefaultHDRBrightness + 0.7;
 				GetGame().GetWorld().SetCameraHDRBrightness(camId, HDRBrightness);
-			} 
-			else
-			{
-				return;
 			}
 		}
 	}
@@ -169,10 +132,6 @@ class GREG_NightVisionComponent: ScriptComponent
 				float DefaultHDRBrightness = GetGame().GetWorld().GetCameraHDRBrightness(camId);
 				float HDRBrightness = DefaultHDRBrightness - 0.7;
 				GetGame().GetWorld().SetCameraHDRBrightness(camId, HDRBrightness);
-			} 
-			else
-			{
-				return;
 			}
 		}
 	}		
