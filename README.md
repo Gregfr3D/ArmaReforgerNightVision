@@ -23,7 +23,7 @@ How to get the mod and use it on your mod :
 
 # How to use (in-game) ?
   
-  All NVG can be found in an "Equiment Crate" in the GameMaster mode (and if it doesn't bug in the arsenal too).
+  All NVG can be found in an "Equiment Crate" in the GameMaster mode (and if it doesn't bug in the arsenal too). All faction are available.
   
   
   In "settings/Controls/Equipment" you can set 3 keys.
