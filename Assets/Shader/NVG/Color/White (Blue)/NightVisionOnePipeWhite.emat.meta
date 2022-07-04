@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{92BB4C9EB2F81BFD}Assets/Shader/NVG/Color/White (Blue)/NightVisionOnePipeWhite.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

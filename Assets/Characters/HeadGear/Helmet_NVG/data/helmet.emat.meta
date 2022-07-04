@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{79E7DE79BBA71DC0}Assets/Characters/HeadGear/Helmet_NVG/data/helmet.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D51A7E88F65006E9}Sounds/Characters/HeadGear/GPNVG/nvg_button_click.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

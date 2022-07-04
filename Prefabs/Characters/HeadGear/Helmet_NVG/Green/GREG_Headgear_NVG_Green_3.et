@@ -1,0 +1,83 @@
+GameEntity {
+ ID "59C4E3798A6CA690"
+ components {
+  SoundComponent "{59C4E3798A6CA69B}" {
+   Filenames {
+    "{D51A7E88F65006E9}Sounds/Characters/HeadGear/GPNVG/nvg_button_click.acp" "{2373928C7AE7E94E}Sounds/Characters/HeadGear/GPNVG/nvg_turnon.acp"
+   }
+  }
+  GREG_NightVisionComponent "{59C4E3798A6CA680}" {
+   m_colorshaderpath "{CC1AF451509A074A}Assets/Shader/NVG/Color/Green/NightVisionThreePipeGreen.emat"
+   m_grainshaderpath "{B1F1DD5E4FDC7465}Assets/Shader/NVG/NightVisionGrain.emat"
+   m_CanChangeLuminosity 1
+  }
+  InventoryItemComponent "{59C4E3798A6CA68E}" {
+   Attributes SCR_ItemAttributeCollection "{59C4E3798A6CA68A}" {
+    ItemDisplayName UIInfo "{59C4E3798A6CA68B}" {
+     Name " Night Vision Green (3 pipe)"
+     Description "Night vision helmet"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{59C4E3798A6CA689}" {
+     Weight 1.5
+     DimensionScaler 2500
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{59C4E3798A6CA6F4}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 2
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{59C4E3798A6CA6F2}" {
+   Object "{D1829C876082CC3B}Assets/Characters/HeadGear/Helmet_NVG/helmet.xob"
+  }
+  ParametricMaterialInstanceComponent "{59C4E3798A6CA6F3}" {
+   UserParamAlpha 0
+   ApplyPropertiesWhenMeshChanged 1
+  }
+  RigidBody "{59C4E3798A6CA6F0}" {
+   Mass 1.5
+   ModelGeometry 1
+   Static 1
+  }
+  SimpleSoundComponent "{59C4E3798A6CA6FE}" {
+   Filenames {
+    "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+   }
+   DistanceManagement 0
+  }
+  BaseLoadoutClothComponent "{59C4E3798A6CA6FC}" {
+   WearAction SCR_WearClothUserAction "{59C4E3798A6CA6FA}" {
+    ParentContextList {
+     "default"
+    }
+    UIInfo UIInfo "{59C4E3798A6CA6FB}" {
+     Name "#AR-Inventory_Wear"
+    }
+   }
+   Area HeadCover
+   WornModel "{D1829C876082CC3B}Assets/Characters/HeadGear/Helmet_NVG/helmet.xob"
+   ItemModel "{D1829C876082CC3B}Assets/Characters/HeadGear/Helmet_NVG/helmet.xob"
+   SoundInt 110
+  }
+  ActionsManagerComponent "{59C4E3798A6CA6E4}" {
+   ActionContexts {
+    UserActionContext "{59C4E3798A6CA6E3}" {
+     ContextName "default"
+     Position PointInfo "{59C4E3798A6CA6E1}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_EquipClothAction "{52E6EC76F51E12DE}" : "{83B98F1A96591AC6}Prefabs/Characters/Core/Actions/EquipClothAction.conf" {
+    }
+    SCR_PickUpItemAction "{52E6EC76F43FCD58}" : "{F39A4E9B190C1846}Prefabs/Characters/Core/Actions/PickUpItemAction.conf" {
+    }
+   }
+  }
+  RplComponent "{59C4E3798A6CA6ED}" {
+  }
+ }
+}

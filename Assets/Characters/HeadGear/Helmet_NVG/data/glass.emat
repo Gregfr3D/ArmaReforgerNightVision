@@ -1,0 +1,9 @@
+MatPBRBasic {
+ AlphaMul 0
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ MetalnessScale 2.006
+ BCRMap "{E92BB453D2DDEC36}Assets/Characters/HeadGear/Helmet_NVG/data/GPNVG_BCR.edds"
+ OpacityMap "{6B8F516F0F088B5B}Assets/Characters/BaseBody/data/HeadClipping_A_1K.edds"
+ NMOMap "{D1F30FC10BAABEA8}Assets/Characters/HeadGear/Helmet_NVG/data/GPNVG_NMO.edds"
+}
