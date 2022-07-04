@@ -1,6 +1,0 @@
-SubScene {
- Parent "{96A8AF57260A7392}worlds/MP/MpTest.ent"
-}
-Layer default {
- Index 0
-}
