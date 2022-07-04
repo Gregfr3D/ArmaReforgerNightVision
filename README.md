@@ -82,7 +82,7 @@ For this tutorial i'm gonna use "NewCustom_Grain.emat" as name of the new shader
       - Put an helmet prefab on the ground or duplicate the existing one.
       
       If you do not duplicate the existing helmet :
-          - Put the "SCR_InventoryStorageManagerComponent", "GREG_NightVisionComponent" and the "SoundComponent"
+          - Put the "GREG_NightVisionComponent" and the "SoundComponent"
           - In the "SoundComponent" add two "Filenames" set the first one to "nvg_button_click.acp" the second to "nvg_turnon.acp"
           - In the "GREG_NightVisionComponent" set the "Colorshaderpath" to an existing HDR Color shader.
           - In the "GREG_NightVisionComponent" set the "Grainshaderpath" to your new shader "NewCustom_Grain.emat".
@@ -92,7 +92,7 @@ For this tutorial i'm gonna use "NewCustom_Grain.emat" as name of the new shader
  
 If you do not duplicate the existing helmet :
 
-          - Put the "SCR_InventoryStorageManagerComponent", "GREG_NightVisionComponent" and the "SoundComponent"
+          - Put the "GREG_NightVisionComponent" and the "SoundComponent"
           - In the "SoundComponent" add two "Filenames" set the first one to "nvg_button_click.acp" the second to "nvg_turnon.acp"
           - In the "GREG_NightVisionComponent" set the "Colorshaderpath" to an existing HDR Color shader.
           - In the "GREG_NightVisionComponent" set the "Grainshaderpath" to an existing Grain shader.
@@ -107,3 +107,10 @@ This project is for education purpose not for republish.
 
 
 If you have any request please contact me on discord in the ARMA Official Discord or Greg🔥#0431
+
+# Credits
+
+The GPNVG have been made by Iulian_Dobrogeanu. You can find them here : https://skfb.ly/orJHu
+
+Thanks to BearCore for his help on some scripts.
+
