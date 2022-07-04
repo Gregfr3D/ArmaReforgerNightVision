@@ -113,7 +113,7 @@ If you have any request please contact me on discord in the ARMA Official Discor
 
 # Credits
 
-The GPNVG have been made by Iulian_Dobrogeanu. You can find them here : https://skfb.ly/orJHu
+The GPNVG model have been made by Iulian_Dobrogeanu. You can find them here : https://skfb.ly/orJHu
 
 Thanks to Bearcore for his help on some scripts.
 
