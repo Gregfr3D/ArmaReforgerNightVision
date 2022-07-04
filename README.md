@@ -115,5 +115,5 @@ If you have any request please contact me on discord in the ARMA Official Discor
 
 The GPNVG have been made by Iulian_Dobrogeanu. You can find them here : https://skfb.ly/orJHu
 
-Thanks to BearCore for his help on some scripts.
+Thanks to Bearcore for his help on some scripts.
 
