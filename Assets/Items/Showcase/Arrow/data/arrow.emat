@@ -1,8 +1,0 @@
-MatPBRBasic {
- Color 1 0.834 0 1
- Emissive 1 0.926 0 1
- EmissiveLV -0.468
- SpecularMul 2.081
- AlphaMul 1.121
- BlendMode AlphaBlend
-}
