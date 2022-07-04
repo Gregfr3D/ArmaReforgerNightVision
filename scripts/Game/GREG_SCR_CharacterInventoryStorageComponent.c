@@ -1,11 +1,8 @@
 /*
 	Author: gregfr_3d - Bearcore
-
 	Description:
 		Adds an event to SCR_CharacterInventoryStorageComponent to know when stuff are added or removed from the iventory.
-
 	If you have any troubles with this mod or script please contact me on discord : Greg🔥#0431
-
 */
 
 modded class SCR_CharacterInventoryStorageComponent : CharacterInventoryStorageComponent

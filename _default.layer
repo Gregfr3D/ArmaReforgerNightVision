@@ -4,6 +4,6 @@ GenericWorldEntity world {
  boundMaxs -0.000 -0.000 -0.000
  blockSize 100 1500 100
 }
-GameEntity : "{F26596386516ED94}Prefabs/Characters/HeadGear/Helmet_NVG/White/GREG_Headgear_NVG_White_2.et" {
+GameEntity : "{EF00D1F80966945E}Prefabs/Characters/HeadGear/Helmet_NVG/GREG_Headgear_NVG_Amber_2.et" {
  coords 0 0 0
 }

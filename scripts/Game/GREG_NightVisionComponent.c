@@ -1,20 +1,16 @@
 /*
 	Author: gregfr_3d
-
 	Name: 
 		GREG_NightVisionComponent.c
 	Description:
 		Create a new component called "GREG_NightVisionComponent". Put this component on your helmet and setup the color shader path and the grain shader path.
 		You can create and use your custom shader without changing the script. The Color Shader include the Vignette or the Scope.
 		For now you CAN'T rotate the Night Vision Goggles cause it's not supported yet.
-
 		The key by default are :
 					SHIFT + N = Turn On/Off Night Vision.
 					SHIFT + "+" = Increase the luminosity of the Night Vision.
 					SHIFT + Q (or A) = Decrease the luminosity of the Night Vision.
-
 	If you have any troubles with this mod or script please contact me on discord : Greg🔥#0431
-
 */
 
 [ComponentEditorProps(category: "GREG/Components", description: "Enables Night Vision", color: "0 0 255 255")]
@@ -41,6 +37,7 @@ class GREG_NightVisionComponent: ScriptComponent
 		0 --> 3 Less luminosity, 
 		3 --> 6 More luminosity
 	*/
+	
 	private float LuminosityValue = 3;
  
 	override void EOnInit(IEntity owner)
